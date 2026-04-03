@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner KTI - Penggunaan AI di Kelas XI-I SMAN 75 Jakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>📋 Kuesioner KTI</h1>
+                <p class="subtitle">Penggunaan Artificial Intelligence di Kelas XI-I</p>
+                <p class="school">SMAN 75 Jakarta</p>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <form id="questionnaireForm" class="form-container">
+            <!-- Section 1: Data Pribadi -->
+            <div class="form-section">
+                <h2 class="section-title">📌 Data Pribadi</h2>
+                
+                <div class="form-group">
+                    <label for="fullname">Nama Lengkap *</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Masukkan nama lengkap Anda">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nis">NIS *</label>
+                        <input type="text" id="nis" name="nis" required placeholder="Masukkan NIS">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="nama@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="class">Kelas *</label>
+                        <input type="text" id="class" name="class" value="XI-I" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Pengetahuan tentang AI -->
+            <div class="form-section">
+                <h2 class="section-title">🤖 Pengetahuan tentang Artificial Intelligence</h2>
+                
+                <div class="form-group">
+                    <label>Apakah Anda mengenal Artificial Intelligence (AI)? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="knowAI" value="Ya, sangat mengenal" required>
+                            <span>Ya, sangat mengenal</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="knowAI" value="Ya, cukup mengenal">
+                            <span>Ya, cukup mengenal</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="knowAI" value="Sedikit mengenal">
+                            <span>Sedikit mengenal</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="knowAI" value="Tidak mengenal">
+                            <span>Tidak mengenal</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Sumber pengetahuan Anda tentang AI (Pilih semua yang berlaku) *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiSource" value="Sekolah">
+                            <span>Sekolah</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiSource" value="Internet/Media Sosial">
+                            <span>Internet/Media Sosial</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiSource" value="Teman/Keluarga">
+                            <span>Teman/Keluarga</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiSource" value="Buku/Artikel">
+                            <span>Buku/Artikel</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiSource" value="Lainnya">
+                            <span>Lainnya</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Penggunaan AI -->
+            <div class="form-section">
+                <h2 class="section-title">💻 Penggunaan Artificial Intelligence</h2>
+                
+                <div class="form-group">
+                    <label>Apakah Anda pernah menggunakan AI (ChatGPT, Gemini, dll)? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="useAI" value="Ya, sering" required>
+                            <span>Ya, sering</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="useAI" value="Ya, kadang-kadang">
+                            <span>Ya, kadang-kadang</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="useAI" value="Pernah coba sekali">
+                            <span>Pernah coba sekali</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="useAI" value="Belum pernah">
+                            <span>Belum pernah</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Aplikasi AI apa yang pernah Anda gunakan? (Pilih semua yang berlaku)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="ChatGPT">
+                            <span>ChatGPT</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="Google Gemini">
+                            <span>Google Gemini</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="Claude">
+                            <span>Claude</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="Copilot">
+                            <span>Copilot</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="Midjourney/DALL-E">
+                            <span>Midjourney/DALL-E</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiApps" value="Lainnya">
+                            <span>Lainnya</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Untuk keperluan apa Anda menggunakan AI? (Pilih semua yang berlaku)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Mengerjakan PR/Tugas">
+                            <span>Mengerjakan PR/Tugas</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Belajar/Memahami materi">
+                            <span>Belajar/Memahami materi</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Membuat konten (tulis, desain, dll)">
+                            <span>Membuat konten (tulis, desain, dll)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Hiburan">
+                            <span>Hiburan</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Penelitian">
+                            <span>Penelitian</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aiPurpose" value="Lainnya">
+                            <span>Lainnya</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Dampak AI -->
+            <div class="form-section">
+                <h2 class="section-title">⚖️ Dampak Penggunaan AI</h2>
+                
+                <div class="form-group">
+                    <label>Menurut Anda, apa dampak positif penggunaan AI dalam pendidikan? *</label>
+                    <textarea id="positiveImpact" name="positiveImpact" required placeholder="Jelaskan dampak positif menurut Anda..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Menurut Anda, apa dampak negatif penggunaan AI dalam pendidikan? *</label>
+                    <textarea id="negativeImpact" name="negativeImpact" required placeholder="Jelaskan dampak negatif menurut Anda..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Skala penilaian: Seberapa bermanfaat AI untuk pembelajaran Anda? *</label>
+                    <div class="rating-group">
+                        <input type="radio" id="rating1" name="rating" value="1">
+                        <label for="rating1" class="rating-label">1<br><small>Sangat Tidak Bermanfaat</small></label>
+                        
+                        <input type="radio" id="rating2" name="rating" value="2">
+                        <label for="rating2" class="rating-label">2<br><small>Tidak Bermanfaat</small></label>
+                        
+                        <input type="radio" id="rating3" name="rating" value="3">
+                        <label for="rating3" class="rating-label">3<br><small>Cukup Bermanfaat</small></label>
+                        
+                        <input type="radio" id="rating4" name="rating" value="4">
+                        <label for="rating4" class="rating-label">4<br><small>Bermanfaat</small></label>
+                        
+                        <input type="radio" id="rating5" name="rating" value="5">
+                        <label for="rating5" class="rating-label">5<br><small>Sangat Bermanfaat</small></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Saran dan Masukan -->
+            <div class="form-section">
+                <h2 class="section-title">💡 Saran dan Masukan</h2>
+                
+                <div class="form-group">
+                    <label>Saran dan masukan Anda untuk penggunaan AI yang lebih baik di sekolah</label>
+                    <textarea id="suggestions" name="suggestions" placeholder="Berikan saran dan masukan Anda..."></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label class="checkbox-label large">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <span>Saya setuju dengan pengumpulan data ini untuk keperluan penelitian KTI</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="reset" class="btn btn-secondary">↻ Reset Form</button>
+                <button type="submit" class="btn btn-primary">✓ Kirim & Unduh PDF</button>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Mengirim data dan membuat PDF...</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
